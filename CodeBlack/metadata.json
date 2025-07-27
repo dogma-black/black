@@ -1,0 +1,6 @@
+{
+  "name": "CodeForge",
+  "description": "An AI-powered web development environment that allows you to generate HTML, CSS, and JavaScript for web components by chatting with an AI assistant. Features a live preview, code editor, and project management.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
