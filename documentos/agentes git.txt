@@ -1,0 +1,651 @@
+/Users/s./Documents/adk-samples-main/
+├── .github
+│   └── CODEOWNERS
+├── .gitignore
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── java
+│   ├── README.md
+│   └── agents
+│       ├── software-bug-assistant
+│       │   ├── README.md
+│       │   ├── architecture-diagram.svg
+│       │   ├── deployment
+│       │   │   ├── images
+│       │   │   │   ├── adk-web-open.png
+│       │   │   │   ├── agent-arch-lite-mode.png
+│       │   │   │   ├── agent-arch.png
+│       │   │   │   ├── cloudrun-example-workflow.png
+│       │   │   │   ├── google-cloud-architecture.png
+│       │   │   │   ├── mcp-inspector.png
+│       │   │   │   ├── samuel-bugs.png
+│       │   │   │   └── verify-db.png
+│       │   │   └── mcp-toolbox
+│       │   │       └── tools.yaml
+│       │   └── software-bug-assistant
+│       │       ├── Dockerfile
+│       │       ├── pom.xml
+│       │       └── src
+│       │           └── main
+│       │               └── java
+│       │                   └── SoftwareBugAssistant.java
+│       └── time-series-forecasting
+│           ├── Dockerfile
+│           ├── README.md
+│           ├── diagram.png
+│           ├── generate_diagram.py
+│           ├── pom.xml
+│           ├── src
+│           │   └── main
+│           │       └── java
+│           │           └── com
+│           │               └── google
+│           │                   └── adk
+│           │                       └── samples
+│           │                           └── agents
+│           │                               └── timeseriesforecasting
+│           │                                   └── ForecastingAgent.java
+│           └── tools.yaml
+└── python
+    ├── README.md
+    └── agents
+        ├── RAG
+        │   ├── .env.example
+        │   ├── RAG_architecture.png
+        │   ├── RAG_workflow.png
+        │   ├── README.md
+        │   ├── deployment
+        │   │   ├── deploy.py
+        │   │   ├── grant_permissions.sh
+        │   │   └── run.py
+        │   ├── eval
+        │   │   ├── data
+        │   │   │   ├── conversation.test.json
+        │   │   │   └── test_config.json
+        │   │   └── test_eval.py
+        │   ├── pyproject.toml
+        │   ├── rag
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   ├── prompts.py
+        │   │   └── shared_libraries
+        │   │       └── prepare_corpus_and_data.py
+        │   └── tests
+        │       └── __init__.py
+        ├── README.md
+        ├── academic-research
+        │   ├── .env.example
+        │   ├── README.md
+        │   ├── academic-research.svg
+        │   ├── academic_research
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   ├── prompt.py
+        │   │   └── sub_agents
+        │   │       ├── academic_newresearch
+        │   │       │   ├── __init__.py
+        │   │       │   ├── agent.py
+        │   │       │   └── prompt.py
+        │   │       └── academic_websearch
+        │   │           ├── __init__.py
+        │   │           ├── agent.py
+        │   │           └── prompt.py
+        │   ├── deployment
+        │   │   ├── deploy.py
+        │   │   └── test_deployment.py
+        │   ├── eval
+        │   │   ├── data
+        │   │   │   └── academic_research_evalset.test.json
+        │   │   └── test_eval.py
+        │   ├── pyproject.toml
+        │   └── tests
+        │       └── test_agents.py
+        ├── auto-insurance-agent
+        │   ├── .env.example
+        │   ├── README.md
+        │   ├── arch.png
+        │   ├── auto_insurance_agent
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   └── tools.py
+        │   ├── deployment
+        │   │   ├── deploy.py
+        │   │   └── test_deployment.py
+        │   └── pyproject.toml
+        ├── brand-search-optimization
+        │   ├── README.md
+        │   ├── brand_search_optimization
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   ├── prompt.py
+        │   │   ├── shared_libraries
+        │   │   │   └── constants.py
+        │   │   ├── sub_agents
+        │   │   │   ├── __init__.py
+        │   │   │   ├── comparison
+        │   │   │   │   ├── agent.py
+        │   │   │   │   └── prompt.py
+        │   │   │   ├── keyword_finding
+        │   │   │   │   ├── agent.py
+        │   │   │   │   └── prompt.py
+        │   │   │   └── search_results
+        │   │   │       ├── agent.py
+        │   │   │       └── prompt.py
+        │   │   └── tools
+        │   │       └── bq_connector.py
+        │   ├── brand_search_optimization.png
+        │   ├── customization.md
+        │   ├── deployment
+        │   │   ├── __init__.py
+        │   │   ├── bq_data_setup.sql
+        │   │   ├── bq_populate_data.py
+        │   │   ├── deploy.py
+        │   │   ├── eval.sh
+        │   │   ├── run.sh
+        │   │   ├── test.sh
+        │   │   └── test_deployment.py
+        │   ├── env.example
+        │   ├── eval
+        │   │   ├── __init__.py
+        │   │   ├── data
+        │   │   │   ├── eval_data1.evalset.json
+        │   │   │   └── test_config.json
+        │   │   └── test_eval.py
+        │   ├── pyproject.toml
+        │   └── tests
+        │       ├── example_interaction.md
+        │       └── unit
+        │           └── test_tools.py
+        ├── camel
+        │   ├── .env.example
+        │   ├── README.md
+        │   ├── camel
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   ├── camel_agent
+        │   │   │   ├── __init__.py
+        │   │   │   ├── camel_agent.py
+        │   │   │   ├── prompts.py
+        │   │   │   └── utils.py
+        │   │   └── camel_library
+        │   │       ├── __init__.py
+        │   │       ├── capabilities
+        │   │       │   ├── __init__.py
+        │   │       │   ├── capabilities.py
+        │   │       │   ├── readers.py
+        │   │       │   ├── sources.py
+        │   │       │   └── utils.py
+        │   │       ├── function_types.py
+        │   │       ├── interpreter
+        │   │       │   ├── __init__.py
+        │   │       │   ├── camel_value.py
+        │   │       │   ├── interpreter.py
+        │   │       │   └── library.py
+        │   │       ├── result.py
+        │   │       ├── security_policy.py
+        │   │       └── system_prompt.py
+        │   ├── camel.png
+        │   └── pyproject.toml
+        ├── customer-service
+        │   ├── .env.example
+        │   ├── .gitignore
+        │   ├── README.md
+        │   ├── customer_service
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   ├── config.py
+        │   │   ├── entities
+        │   │   │   ├── __init__.py
+        │   │   │   └── customer.py
+        │   │   ├── prompts.py
+        │   │   ├── shared_libraries
+        │   │   │   ├── __init__.py
+        │   │   │   └── callbacks.py
+        │   │   └── tools
+        │   │       ├── __init__.py
+        │   │       └── tools.py
+        │   ├── customer_service_workflow.png
+        │   ├── deployment
+        │   │   └── deploy.py
+        │   ├── eval
+        │   │   ├── __init__.py
+        │   │   ├── eval_data
+        │   │   │   ├── full_conversation.test.json
+        │   │   │   ├── simple.test.json
+        │   │   │   └── test_config.json
+        │   │   ├── sessions
+        │   │   │   └── 123.session.json
+        │   │   └── test_eval.py
+        │   ├── pyproject.toml
+        │   └── tests
+        │       ├── __init__.py
+        │       └── unit
+        │           ├── __init__.py
+        │           ├── test_config.py
+        │           └── test_tools.py
+        ├── data-science
+        │   ├── .env.example
+        │   ├── README.md
+        │   ├── data-science-architecture.png
+        │   ├── data_science
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   ├── prompts.py
+        │   │   ├── sub_agents
+        │   │   │   ├── __init__.py
+        │   │   │   ├── analytics
+        │   │   │   │   ├── __init__.py
+        │   │   │   │   ├── agent.py
+        │   │   │   │   └── prompts.py
+        │   │   │   ├── bigquery
+        │   │   │   │   ├── __init__.py
+        │   │   │   │   ├── agent.py
+        │   │   │   │   ├── chase_sql
+        │   │   │   │   │   ├── __init__.py
+        │   │   │   │   │   ├── chase_constants.py
+        │   │   │   │   │   ├── chase_db_tools.py
+        │   │   │   │   │   ├── dc_prompt_template.py
+        │   │   │   │   │   ├── llm_utils.py
+        │   │   │   │   │   ├── qp_prompt_template.py
+        │   │   │   │   │   └── sql_postprocessor
+        │   │   │   │   │       ├── README.md
+        │   │   │   │   │       ├── __init__.py
+        │   │   │   │   │       ├── correction_prompt_template.py
+        │   │   │   │   │       └── sql_translator.py
+        │   │   │   │   ├── prompts.py
+        │   │   │   │   └── tools.py
+        │   │   │   └── bqml
+        │   │   │       ├── __init__.py
+        │   │   │       ├── agent.py
+        │   │   │       ├── prompts.py
+        │   │   │       └── tools.py
+        │   │   ├── tools.py
+        │   │   └── utils
+        │   │       ├── create_bq_table.py
+        │   │       ├── data
+        │   │       │   ├── test.csv
+        │   │       │   └── train.csv
+        │   │       ├── reference_guide_RAG.py
+        │   │       └── utils.py
+        │   ├── deployment
+        │   │   ├── __init__.py
+        │   │   ├── deploy.py
+        │   │   └── test_deployment.py
+        │   ├── eval
+        │   │   ├── __init__.py
+        │   │   ├── eval_data
+        │   │   │   ├── simple.test.json
+        │   │   │   └── test_config.json
+        │   │   └── test_eval.py
+        │   ├── pyproject.toml
+        │   └── tests
+        │       └── test_agents.py
+        ├── financial-advisor
+        │   ├── .env.example
+        │   ├── README.md
+        │   ├── deployment
+        │   │   ├── deploy.py
+        │   │   └── test_deployment.py
+        │   ├── eval
+        │   │   ├── data
+        │   │   │   └── financial-advisor.test.json
+        │   │   └── test_eval.py
+        │   ├── financial-advisor.png
+        │   ├── financial_advisor
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   ├── prompt.py
+        │   │   └── sub_agents
+        │   │       ├── data_analyst
+        │   │       │   ├── __init__.py
+        │   │       │   ├── agent.py
+        │   │       │   └── prompt.py
+        │   │       ├── execution_analyst
+        │   │       │   ├── __init__.py
+        │   │       │   ├── agent.py
+        │   │       │   └── prompt.py
+        │   │       ├── risk_analyst
+        │   │       │   ├── __init__.py
+        │   │       │   ├── agent.py
+        │   │       │   └── prompt.py
+        │   │       └── trading_analyst
+        │   │           ├── __init__.py
+        │   │           ├── agent.py
+        │   │           └── prompt.py
+        │   ├── pyproject.toml
+        │   └── tests
+        │       └── test_agents.py
+        ├── fomc-research
+        │   ├── .env-example
+        │   ├── FOMC_Research_Agent_Workflow.png
+        │   ├── README.md
+        │   ├── deployment
+        │   │   ├── bigquery_setup.py
+        │   │   ├── deploy.py
+        │   │   ├── sample_timeseries_data.csv
+        │   │   └── test_deployment.py
+        │   ├── fomc-research.svg
+        │   ├── fomc_research
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   ├── root_agent_prompt.py
+        │   │   ├── shared_libraries
+        │   │   │   ├── __init__.py
+        │   │   │   ├── callbacks.py
+        │   │   │   ├── file_utils.py
+        │   │   │   └── price_utils.py
+        │   │   ├── sub_agents
+        │   │   │   ├── __init__.py
+        │   │   │   ├── analysis_agent.py
+        │   │   │   ├── analysis_agent_prompt.py
+        │   │   │   ├── extract_page_data_agent.py
+        │   │   │   ├── extract_page_data_agent_prompt.py
+        │   │   │   ├── research_agent.py
+        │   │   │   ├── research_agent_prompt.py
+        │   │   │   ├── retrieve_meeting_data_agent.py
+        │   │   │   ├── retrieve_meeting_data_agent_prompt.py
+        │   │   │   ├── summarize_meeting_agent.py
+        │   │   │   └── summarize_meeting_agent_prompt.py
+        │   │   └── tools
+        │   │       ├── __init__.py
+        │   │       ├── compare_statements.py
+        │   │       ├── compute_rate_move_probability.py
+        │   │       ├── fetch_page.py
+        │   │       ├── fetch_transcript.py
+        │   │       └── store_state.py
+        │   └── pyproject.toml
+        ├── gemini-fullstack
+        │   ├── .template
+        │   │   └── templateconfig.yaml
+        │   ├── Makefile
+        │   ├── README.md
+        │   ├── app
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   └── config.py
+        │   ├── frontend
+        │   │   ├── components.json
+        │   │   ├── eslint.config.js
+        │   │   ├── index.html
+        │   │   ├── package-lock.json
+        │   │   ├── package.json
+        │   │   ├── src
+        │   │   │   ├── App.tsx
+        │   │   │   ├── components
+        │   │   │   │   ├── ActivityTimeline.tsx
+        │   │   │   │   ├── ChatMessagesView.tsx
+        │   │   │   │   ├── InputForm.tsx
+        │   │   │   │   ├── WelcomeScreen.tsx
+        │   │   │   │   └── ui
+        │   │   │   │       ├── badge.tsx
+        │   │   │   │       ├── button.tsx
+        │   │   │   │       ├── card.tsx
+        │   │   │   │       ├── input.tsx
+        │   │   │   │       ├── scroll-area.tsx
+        │   │   │   │       ├── select.tsx
+        │   │   │   │       ├── tabs.tsx
+        │   │   │   │       └── textarea.tsx
+        │   │   │   ├── global.css
+        │   │   │   ├── main.tsx
+        │   │   │   ├── utils.ts
+        │   │   │   └── vite-env.d.ts
+        │   │   ├── tsconfig.json
+        │   │   ├── tsconfig.node.json
+        │   │   └── vite.config.ts
+        │   ├── pyproject.toml
+        │   └── uv.lock
+        ├── image-scoring
+        │   ├── .env.example
+        │   ├── README.md
+        │   ├── deployment
+        │   │   ├── deploy.py
+        │   │   └── test_deployment.py
+        │   ├── eval
+        │   │   ├── data
+        │   │   │   ├── test.json
+        │   │   │   └── test_config.json
+        │   │   └── test_eval.py
+        │   ├── image_scoring
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   ├── checker_agent.py
+        │   │   ├── config.py
+        │   │   ├── policy.json
+        │   │   ├── prompt.py
+        │   │   ├── sub_agents
+        │   │   │   ├── image
+        │   │   │   │   ├── __init__.py
+        │   │   │   │   ├── imagen_agent.py
+        │   │   │   │   ├── prompt.py
+        │   │   │   │   └── tools
+        │   │   │   │       └── image_generation_tool.py
+        │   │   │   ├── prompt
+        │   │   │   │   ├── __init__.py
+        │   │   │   │   ├── prompt.py
+        │   │   │   │   └── prompt_agent.py
+        │   │   │   ├── scoring
+        │   │   │   │   ├── __init__.py
+        │   │   │   │   ├── prompt.py
+        │   │   │   │   ├── scoring_agent.py
+        │   │   │   │   └── tools
+        │   │   │   │       ├── get_images_tool.py
+        │   │   │   │       └── set_score_tool.py
+        │   │   │   └── tools
+        │   │   │       └── fetch_policy_tool.py
+        │   │   └── tools
+        │   │       └── loop_condition_tool.py
+        │   ├── image_scoring_architecture.png
+        │   └── pyproject.toml
+        ├── llm-auditor
+        │   ├── .env.example
+        │   ├── README.md
+        │   ├── deployment
+        │   │   └── deploy.py
+        │   ├── eval
+        │   │   ├── data
+        │   │   │   ├── blueberries.test.json
+        │   │   │   ├── ice_cream_sandwich.test.json
+        │   │   │   └── test_config.json
+        │   │   └── test_eval.py
+        │   ├── llm_auditor
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   └── sub_agents
+        │   │       ├── __init__.py
+        │   │       ├── critic
+        │   │       │   ├── __init__.py
+        │   │       │   ├── agent.py
+        │   │       │   └── prompt.py
+        │   │       └── reviser
+        │   │           ├── __init__.py
+        │   │           ├── agent.py
+        │   │           └── prompt.py
+        │   ├── llm_auditor_architecture.png
+        │   ├── pyproject.toml
+        │   └── tests
+        │       └── test_agents.py
+        ├── marketing-agency
+        │   ├── .env.example
+        │   ├── README.md
+        │   ├── demo_html
+        │   │   ├── about.html
+        │   │   ├── contact.html
+        │   │   ├── gallery.html
+        │   │   ├── index.html
+        │   │   ├── script.js
+        │   │   └── style.css
+        │   ├── deployment
+        │   │   ├── deploy.py
+        │   │   └── test_deployment.py
+        │   ├── eval
+        │   │   ├── data
+        │   │   │   └── seminal.test.json
+        │   │   └── test_eval.py
+        │   ├── marketing-agency.png
+        │   ├── marketing_agency
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   ├── prompt.py
+        │   │   └── sub_agents
+        │   │       ├── domain_create
+        │   │       │   ├── __init__.py
+        │   │       │   ├── agent.py
+        │   │       │   └── prompt.py
+        │   │       ├── logo_create
+        │   │       │   ├── __init__.py
+        │   │       │   ├── agent.py
+        │   │       │   └── prompt.py
+        │   │       ├── marketing_create
+        │   │       │   ├── __init__.py
+        │   │       │   ├── agent.py
+        │   │       │   └── prompt.py
+        │   │       └── website_create
+        │   │           ├── __init__.py
+        │   │           ├── agent.py
+        │   │           └── prompt.py
+        │   ├── pyproject.toml
+        │   └── tests
+        │       └── test_agents.py
+        ├── personalized-shopping
+        │   ├── .env.example
+        │   ├── README.md
+        │   ├── deployment
+        │   │   └── deploy.py
+        │   ├── eval
+        │   │   ├── eval_data
+        │   │   │   ├── simple.test.json
+        │   │   │   └── test_config.json
+        │   │   └── test_eval.py
+        │   ├── personalized_shopping
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   ├── prompt.py
+        │   │   ├── shared_libraries
+        │   │   │   ├── init_env.py
+        │   │   │   ├── search_engine
+        │   │   │   │   ├── convert_product_file_format.py
+        │   │   │   │   └── run_indexing.sh
+        │   │   │   └── web_agent_site
+        │   │   │       ├── __init__.py
+        │   │   │       ├── engine
+        │   │   │       │   ├── engine.py
+        │   │   │       │   ├── goal.py
+        │   │   │       │   └── normalize.py
+        │   │   │       ├── envs
+        │   │   │       │   └── web_agent_text_env.py
+        │   │   │       ├── templates
+        │   │   │       │   ├── attributes_page.html
+        │   │   │       │   ├── description_page.html
+        │   │   │       │   ├── done_page.html
+        │   │   │       │   ├── features_page.html
+        │   │   │       │   ├── item_page.html
+        │   │   │       │   ├── results_page.html
+        │   │   │       │   ├── review_page.html
+        │   │   │       │   └── search_page.html
+        │   │   │       └── utils.py
+        │   │   └── tools
+        │   │       ├── click.py
+        │   │       └── search.py
+        │   ├── ps_architecture.png
+        │   ├── pyproject.toml
+        │   └── tests
+        │       ├── example_interactions
+        │       │   ├── example_product.png
+        │       │   ├── image_search_denim_skirt.session.json
+        │       │   ├── image_search_denim_skirt.session.md
+        │       │   ├── text_search_floral_dress.session.json
+        │       │   └── text_search_floral_dress.session.md
+        │       ├── test_tools.py
+        │       └── tools
+        │           ├── test_config.json
+        │           └── tools.test.json
+        ├── software-bug-assistant
+        │   ├── .dockerignore
+        │   ├── .env.example
+        │   ├── Dockerfile
+        │   ├── README.md
+        │   ├── deployment
+        │   │   ├── images
+        │   │   │   ├── adk-web.png
+        │   │   │   ├── architecture.svg
+        │   │   │   ├── cloud-run-example.png
+        │   │   │   ├── cloud-sql-studio.png
+        │   │   │   ├── google-cloud-architecture.png
+        │   │   │   ├── software-bug-agent.gif
+        │   │   │   └── verify-db.png
+        │   │   └── mcp-toolbox
+        │   │       └── tools.yaml
+        │   ├── pyproject.toml
+        │   ├── software_bug_assistant
+        │   │   ├── __init__.py
+        │   │   ├── agent.py
+        │   │   ├── prompt.py
+        │   │   └── tools
+        │   │       └── tools.py
+        │   └── uv.lock
+        └── travel-concierge
+            ├── .env.example
+            ├── README.md
+            ├── deployment
+            │   └── deploy.py
+            ├── eval
+            │   ├── data
+            │   │   ├── inspire.test.json
+            │   │   ├── intrip.test.json
+            │   │   ├── pretrip.test.json
+            │   │   └── test_config.json
+            │   └── test_eval.py
+            ├── pyproject.toml
+            ├── tests
+            │   ├── __init__.py
+            │   ├── mcp_abnb.py
+            │   ├── post_booking_sample.md
+            │   ├── pre_booking_sample.md
+            │   ├── programmatic_example.py
+            │   └── unit
+            │       └── test_tools.py
+            ├── travel-concierge-arch.png
+            └── travel_concierge
+                ├── __init__.py
+                ├── agent.py
+                ├── profiles
+                │   ├── itinerary_empty_default.json
+                │   └── itinerary_seattle_example.json
+                ├── prompt.py
+                ├── shared_libraries
+                │   ├── __init__.py
+                │   ├── constants.py
+                │   └── types.py
+                ├── sub_agents
+                │   ├── __init__.py
+                │   ├── booking
+                │   │   ├── __init__.py
+                │   │   ├── agent.py
+                │   │   └── prompt.py
+                │   ├── in_trip
+                │   │   ├── __init__.py
+                │   │   ├── agent.py
+                │   │   ├── prompt.py
+                │   │   └── tools.py
+                │   ├── inspiration
+                │   │   ├── __init__.py
+                │   │   ├── agent.py
+                │   │   └── prompt.py
+                │   ├── planning
+                │   │   ├── __init__.py
+                │   │   ├── agent.py
+                │   │   └── prompt.py
+                │   ├── post_trip
+                │   │   ├── __init__.py
+                │   │   ├── agent.py
+                │   │   └── prompt.py
+                │   └── pre_trip
+                │       ├── __init__.py
+                │       ├── agent.py
+                │       └── prompt.py
+                └── tools
+                    ├── __init__.py
+                    ├── memory.py
+                    ├── places.py
+                    └── search.py

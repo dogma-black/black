@@ -1,0 +1,57 @@
+/Users/s./.ollama/
+├── .DS_Store
+├── history
+├── id_ed25519
+├── id_ed25519.pub
+├── logs
+│   ├── app-1.log
+│   ├── app-2.log
+│   ├── app-3.log
+│   ├── app-4.log
+│   ├── app-5.log
+│   ├── app.log
+│   ├── server-1.log
+│   ├── server-2.log
+│   ├── server-3.log
+│   ├── server-4.log
+│   ├── server-5.log
+│   └── server.log
+└── models
+    ├── .DS_Store
+    ├── Llama_8B_CoreML
+    │   ├── Manifest.json
+    │   ├── README.md
+    │   ├── blobs
+    │   ├── gitattributes
+    │   ├── gitignore
+    │   ├── lllama3_1_8b.mlmodel
+    │   ├── model.mlmodel
+    │   └── weight.bin
+    ├── blobs
+    │   ├── sha256-1da0581fd4ce92dcf5a66b1da737cf215d8dcf25aa1b98b44443aaf7173155f5
+    │   ├── sha256-2e0493f67d0c8c9c68a8aeacdf6a38a2151cb3c4c1d42accf296e19810527988
+    │   ├── sha256-316526ac7323d6f42305c5bbf1939e1197487c1e6ea1f01292ceb5e3040b707a
+    │   ├── sha256-3a43f93b78ec50f7c4e4dc8bd1cb3fff5a900e7d574c51a6f7495e48486e0dac
+    │   ├── sha256-41c2cf8c272f6fb0080a97cd9d9bd7d4604072b80a0b10e7d65ca26ef5000c0c
+    │   ├── sha256-46bb65206e0e2b00424f33985a5281bd21070617ebcfda9be86eb17e6e00f793
+    │   ├── sha256-52d2a7aa3a380c606bd1cd3d6f777a9c65a1c77c2e0cb091eed2968a5ef04dc3
+    │   ├── sha256-590d74a5569b8a20eb2a8b0aa869d1d1d3faf6a7fdda1955ae827073c7f502fc
+    │   ├── sha256-75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de
+    │   ├── sha256-7f6a57943a88ef021326428676fe749d38e82448a858433f41dae5e05ac39963
+    │   ├── sha256-832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e
+    │   ├── sha256-83b9da835d9f13632a97e550cc8fd02ff7f39b88a843f0a8923330890682977a
+    │   ├── sha256-8c17c2ebb0ea011be9981cc3922db8ca8fa61e828c5d3f44cb6ae342bf80460b
+    │   ├── sha256-a242d8dfdc8f8c2b0586ee85fba70adb408fb633aba2836fe1b05f2c46631474
+    │   ├── sha256-a99b7f834d754b88f122d865f32758ba9f0994a83f8363df2c1e71c17605a025
+    │   ├── sha256-b861bd365e679fbafab5a0044ebc47b8d6925c8a60b5ce594e0cead4a4110725
+    │   └── sha256-f02dd72bb2423204352eabc5637b44d79d17f109fdb510a7c51455892aa2d216
+    └── manifests
+        └── registry.ollama.ai
+            └── library
+                ├── codellama
+                │   ├── 7b
+                │   └── latest
+                ├── qwen
+                │   └── latest
+                └── qwen2.5vl
+                    └── 7b

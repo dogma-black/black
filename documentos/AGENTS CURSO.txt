@@ -1,0 +1,584 @@
+/Users/s./Documents/GitHub/student_02_db6325fa68e7 3/
+├── .bash_history
+├── .bash_logout
+├── .bashrc
+├── .cache
+│   ├── Microsoft
+│   │   └── DeveloperTools
+│   │       └── deviceid
+│   ├── cloud-code
+│   │   ├── api-metadata
+│   │   │   ├── code_snippets.csv
+│   │   │   ├── libraries-bom_versions.xml
+│   │   │   ├── libraries.csv
+│   │   │   └── products.csv
+│   │   ├── cloudcode_cli
+│   │   │   └── cloudcode_cli
+│   │   │       └── e7bacc0e
+│   │   │           └── cloudcode_cli
+│   │   └── install_id.txt
+│   └── jedi
+│       ├── CPython-312-33
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-00dcf1234876736ec25922f73e5fb9c1a21187ae74c81259e25ffd9b1e5d7e4d.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-0121f2a3b37e6dd34c05053147e9df338ed9dbef858033243b35538abf741430.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-022b4f22c1a9532f5064b828eb7ae1004954c030e17020c4bcb1454a7315a2dc.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-034b0a56310fb841af447ce6b3fbfb1dfbaf436ea6776715429f0bd44a04cddf.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-038e237a46fe3dda2d63cb2bcf9251c56d2734b6b4f6e108a6a9716fb746fb43.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-04bdd64621613a523db0fae573c733b38fc6c1a36c94aa4bbb88eee2aa36da83.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-071e68f5f0e8ec971dc9489cc32976b032c55a8e9a9dc16a9eb00c804e98d44f.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-073ad4c1038ed085d5bcb8caefb04b6a60e7a4843fb1364b400871221d2ed32b.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-07a10a77e740df2de5571b0ac8b60611e0be11ed63c7afbca5a8fb245aa08d77.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-07b447df213f84f01a5722d141193ebe3d22df1ba8651c670fbc40b5fd43bf94.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-0861fb8f2e742b486335d331291e82bc6bac12f4b4ddae1ca2663aa3c5176229.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-09415d8c6c9227ce7a6a07c63dde9d6655e4c07ca11fc0066989f01736e24535.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-09f7cbfd1146d5fdd866ef830897567d07ff8958a6c9fedf06f2db19c9bc7406.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-0b1f02932b644937b8037005de880ce661687e8e435ff3eb3c579144ca5edd8c.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-0d43108d1235adf38fa80df50e00a4e62648f48aa2ae9c8187ab91a5b49b89a5.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-0e59493d1ce6cb44278a7917576adb9203c2c8d004bea5a181a9ce86e3aed840.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-0f2d693cbc12209455606466499325be251348974503f10ad9ab93573cd8f5e6.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-10fe5cdbe21f34008bcb347fc87c1705e0c423a6d4cbc5ce4f792c707c0e175e.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-17c5430094f853521afe04f17c858e352cc0cbc4c849556000f822369e94c8fd.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-1e0654ff193a3da4f8046fcfddd41859c1820d6588c2911cfada0ef87dcea67a.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-21321e1ab3ad5ac577bb036cef539405ee24eba48fc68f544850db1989929d37.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-216c7f7fc82b06bee9f08aa8df4fad2aba6d06588bc2c5c0a067115bc4ecdbe6.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-225685d9f1feeb560eaafd512bf9336040764461770c3b6f93486b484223bf8e.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-244d7d8cfc417371c101147c6d2daaca9aaa44783acf2041183ea933d2545392.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-25cca91c24b88da8586a7cdcbe19bbe508434d9adaae86ec339b581253a1d21b.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-2896bd21f1d4fd8bb05b4a9e5962b2d6ea8222b7f983c4bbed95172b70540d42.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-2c393c3688713d6694ec2c239ba333b0bc66601dfb3f918cc7832604366476f3.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-2d8652092d29216154c8323fbbb38f674cd021ea0079345babad6da74ef16f37.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-333100d09daeabc5b9b8325d7ee5899b11a12a8b230cc4cce55030c89d91e687.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-342a352425143f848a27a133e6d9f3295c08893f538b7a9699aeef65ee38851d.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-36e0864f920be5366cf57745466ac08d882f3cf297d3377e173974d170d5dfcf.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-39cc8f0e7c2eba4fabc37ec095eccfc134178f47b4cd0b84d603b2c6bfb5c9c2.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-3c3eab8e64d75e632e5b49e0a1a576cc6e14c6e86e7ac19bc245ae57fbfaa0de.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-3f302c5a4b76936c6b743338ee5149fa71f5e10c1e2f55708b4214d6b420af66.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-3f73595be630e44b9da92f225d451affeb67389945956228c629238d96d86baa.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-404d8a9eec8cae6b2fcf9b1cd7b653e8e1d2a7ea7efcf89c488fc2eacc21d2d4.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-4159d8fc78c603e8c117c763419b498949645983d1a26886a41491f63f9addba.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-49724527f517c21eb04040ae58830014df1e0111918834b44a5dcdd8d30b0cef.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-4caa79c6e6d4e7ecc2e1f9cd52d5f9a1ec2c076076673d56eac4ad5c6ff2b62e.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-4da33633e4ad1724826da28d7f57aed126198dbe04a5dcf302f224cceb076308.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-4e5fa366fcdde546f622663bf3d9bfdd7252223d6b70c56109d55be8ac74c72b.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-4f019d9e7af029afc8f2f0f43ec2efd90c34c6a9b457d5d536fe434386ee6477.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-5127c47a5e7e2cd613fffecb7b248ce8ec43ae0315fd10b5b1d0a833facb0359.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-52020b8553e813658b09acac939a8ebe2f09e6253cc1f13a2346405c8a8073fb.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-526b2d160a4b15ba8a90290ad4548f9e6b510629b74d5bde280230c690411ce4.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-536dae94bf2a155e986f7a35af979ecc0d4f556e356bba0874da62a7b074acdd.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-56e05656bc4f9d1f1148c1276f08dae6d69e63d91fd62edfc5f8917ebda999e0.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-5885bc3fad9ece712442208a1d401e207904e686053c76f89ae9aa4594fd5fd2.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-5acc24ca85b787b2282823b93417edcff629c30f1163dccc817e3ccb3af11ebd.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-5bb21eceface897d90de74da0373743f5cad467c758b227d5cfc966c2758a7c4.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-5c5a66d321cf65919d1b18e5c3d21f1f662b2e9cdaad4e270d3ee05bd5c41584.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-5cc1ac0d8e5455ea7af1916719a91084c3e1ea2e75f0b1962fddf73f6b03b078.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-5d61b851fac46a7d56aa440c4abf26b40c450a0d87906d0da96d81c11d8d0936.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-61206e509d8db1843e6d000b6a91ab0e93722ad644e3f6e4527346f4c9bf31d4.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-63f76998d042d1140e116cdaecfc4d8716478fe8b6b911ade4f53bfd6baac483.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-664ddafd2f1fabf7c7fba8d225287d964aa35259bdcf8e5669681db25ed67af8.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-6b57fbb52dd3eff48c4537e2268f8a968a40880683d79328a875980e44285fdd.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-6f9de18d60ed8d2e6ed06e9891ef5ca237d0539bddc12917e6d6d5e9e32adedd.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-70dc6b1db231f69148550a2de24899e4b1f7f2d56131592bf0135b86e13b1fd5.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-726ee09ef0d1549d09dfe3c5735c4535b4d775b217dc3b2ba9cf04c57fb6da2e.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-72b3a18430fe20c516dd2dadc7f493be19aa687b71a7e2d8dadb79f43b2b29c4.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-755a02a1b648a1d3b8b72edd8b73d74cc591e10bb9ff510372805e200af7b873.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-784725f86a31ea567cb3f2845c69bf6029d832fd07dd800861e1ccc3d2528b6b.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-7ca9c54aca7256dfb801c6023d3940ec4b8d57a3c1f5cca7f3052d4512b6f9f3.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-7e04eb6181cdecf6b5225b0e31da4a4f27e60b603aa5675f76792c2efbe42659.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-84fed8a3fa38a59d1fd32638cba555c66ff79ad2bd397eb8683c4f8045684b40.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-867e4e7aa92def2511217932b0b454762a7f1402bbc2d3a46593528bc90bc1cd.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-880905f4effa1af96ff7a42c5a319f12d6b382c046b4d57ed5c81afc3b1279de.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-8872ac4ee0739213ba77f7f1b8d62481e726de87e902f8b099dfacf4f71f2b68.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-8880b03d3e6b433964883159ad4cffa023f175e4914270923180596c21d4fe86.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-8a3afe511de0f7e6959808038c89850f0d8cf9f8e70f1d6e73a2f938b2296757.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-8d1aa0e5535f26e2b615cedbfa51f9c56163ee4c8f59f85b0a932ba82ba9ee19.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-918d5ae28d8fa9f272b969b0eb596828f2f1afa877283dac861c8304926f1ada.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-980819bfb0d392b919518e62901f637897cc3320fd1e9168b7cd38a8d3b00b0e.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-9c1f9aed9065dcd4099a7e20ac01931c2061a8642c583380481b9a46b7c4a49e.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-9ca98357e4a122f9ebca03a71f4dee3532cfee115577ad714bdb5a0f3951219a.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-a37628f0a0ca80ce92ed01a856ad09ea88467b79554d624b33fe20146e4cdc71.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-a4b5a9d0e57240518aa5e792da8a808ff8b02fc02d2d5231e4bf8d4f302d6be2.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-a93768fa46a59d2b8cbf2f10072d8980a8afe60fe4fa0a5a28347586dd991fb8.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-ab3ec14de0e0b2c87028dcbd7d2dcc1e02bbff98aa674198943fb3050bb3de5b.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-aeb829855e8803023a78c7d2119355e96a2a8ced59f517adf0137aa409418f33.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-af24ddeb2e8de14e8a4fcde8e0a8930124cdd61b352fc2aca2810a942563894e.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-af411ecc043208a0add3360665769e252dc15303bec6ff158c6cc00f3b91151a.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-b111ed6b4c0f1783950a56517387badf694a84d313e94f10b2542a9d89894bd8.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-b70f893271063c4c9105578325b32f7002d4e041e1688fab587d3677fd37dd6c.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-b7184d26759c6a4a897a78a14cad1efceb95d366ca21b35ab22e1347c6628679.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-b71ab3ad1baae077b07e583edd59cdffa323468e9159ea2b14849ff501f3ade9.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-b71f8e7049bee258dc2ae697746c36897930f5a642fdc68bad83e38ea68ec526.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-bddf70f0521fd9207e36b1e5007b640f2acf623aba094604b2b6a2b68c6ca373.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-c092b1426738fff52412d3f0e2d50bf7c47ca62a83cb3a8907c008b34c05c414.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-c33eb6e35acf329617b760269480ad7943df41ff3e6362ee7050b89b7b74e7c4.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-c3f6be73fddbd964541bac7c48154b9a9268c94c19ba649e614c70868b11cf2c.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-c4fd053b4c241762b76e095d04e21378e4f050c4baa154f9db0bde1b77c2e2c8.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-cb538872f5fd83f3b6f72cc6bcc51f08cfb8dcebc23eceb0018ba41bbf58e369.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-d0cd22dcf82d4c13205059ae741ebcea536345a42a56427b5ff64618344479b4.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-d137976a603e739ec24984fae2de1691a2ebe806709aba68851378cc775e5ffb.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-d1a4895d4641f1160c32ea69c5f6e974b44dfa3bc63c970cb69bb3d6ce1a77d9.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-d342489b008dbb0af86ffd31ac209ffc355152f9cfcc0b3d6464fd7adf08d5f2.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-d4e756ee6b0e7d19097bee6a641ad263d587d27ba043ad6593f06730aa37fab3.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-d6ef6f9128cecba99674405b6a551aa29caa30e5656e24a9c0ebfd3ce2470a2c.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-d8d9e20942715648a75f926f1e81955c9a4b779d2e907be015f05cfeadfd5e58.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-da523f3f1104ddb0d1e50240501d7ce1f7a4a497034114d902326ef455be09d0.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-da99cb43c34288416e113379ee9f811f76081cd2fe6549728e5ce588cc7f122e.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-dba49907e1996944498f11ae903afce91457f3da0b355efcc04aed77c494ef19.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-e3e58ed69712bee7e22c6509595ac1e17bb8a86181c4c7e88c3135dc9755a60e.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-e4c7bd246e89c0f1831c3d95c31b56f639ae0c0ccbe44443cfe3db0ed8f3b814.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-e57c58d9b51902c01ba7a7cc5928ea63dcafaa84c3d85716a2f322566c77dce4.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-eca831e78cde6c8d5bd85aa915f301636a40d168ebe3e6a4583ea148cbf96612.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-ed360b6ae4602c447aafcbe742fd87a2601a47e32ff1897cc6b9429a7099d186.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-eeb06445ec7b346ca7fbd2d26c768649243f0388801172ecc186cf50adac184e.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-ef8f2b34e90549e687862f4530347f09e9eaad8030a3d7536781b5deb7f2f1d9.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-f41b5838785f3a1e93663a2984ae651bcc5824d7242a312ceec122d8bf3dd620.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-f8ca79349111d7ee06329547d6e4ba4c557bab6498b9f7a07b8a896959eb41bc.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-fa8572951f95be5446bcf15107f206499fd28828b43e33d38f5b5c9c5cfd4b64.pkl
+│       │   ├── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-fd601293d90d4ed1b5937b96f320de27d7d651624d0bb0caf0eb35489c1ae20d.pkl
+│       │   └── 4305da1ea25c27fce08bd14001b76fd54fe42a0724bbd5168c76680a56eda5be-ffe31e51e44fac35f9efbf0f87e68c849eec75ac508867befd943fd0b98ca650.pkl
+│       └── PARSO-CACHE-LOCK
+├── .codeoss
+│   ├── cde_restorepath
+│   ├── data
+│   │   ├── CachedProfilesData
+│   │   │   └── __default__profile__
+│   │   │       ├── extensions.builtin.cache
+│   │   │       └── extensions.user.cache
+│   │   ├── Machine
+│   │   ├── User
+│   │   │   ├── History
+│   │   │   │   ├── -3f0f6b3f
+│   │   │   │   │   ├── 5fnZ.py
+│   │   │   │   │   ├── 8RT0.py
+│   │   │   │   │   ├── 8U15.py
+│   │   │   │   │   ├── BZNJ.py
+│   │   │   │   │   ├── GtGe.py
+│   │   │   │   │   ├── MtFn.py
+│   │   │   │   │   ├── Q9rA.py
+│   │   │   │   │   ├── bLXp.py
+│   │   │   │   │   ├── cVj5.py
+│   │   │   │   │   ├── entries.json
+│   │   │   │   │   ├── nNcT.py
+│   │   │   │   │   ├── r6UH.py
+│   │   │   │   │   └── yOWD.py
+│   │   │   │   ├── -422a496d
+│   │   │   │   │   ├── 0nYm.json
+│   │   │   │   │   ├── 9IKu.json
+│   │   │   │   │   ├── DNw6.json
+│   │   │   │   │   ├── GDF5.json
+│   │   │   │   │   ├── OaA4.json
+│   │   │   │   │   ├── Uu18.json
+│   │   │   │   │   ├── d6Lj.json
+│   │   │   │   │   ├── entries.json
+│   │   │   │   │   ├── hDDn.json
+│   │   │   │   │   ├── mshC.json
+│   │   │   │   │   ├── wKiM.json
+│   │   │   │   │   ├── xyhP.json
+│   │   │   │   │   └── yzue.json
+│   │   │   │   ├── -4601780b
+│   │   │   │   │   ├── ZFDd.py
+│   │   │   │   │   └── entries.json
+│   │   │   │   ├── -e871ba4
+│   │   │   │   │   ├── 3v5T.py
+│   │   │   │   │   ├── CZUL.py
+│   │   │   │   │   ├── Fi85.py
+│   │   │   │   │   ├── JD76.py
+│   │   │   │   │   ├── UtGL.py
+│   │   │   │   │   └── entries.json
+│   │   │   │   ├── 3bbd028b
+│   │   │   │   │   ├── Eaxf.py
+│   │   │   │   │   ├── RHfm.py
+│   │   │   │   │   ├── entries.json
+│   │   │   │   │   ├── oZ5B.py
+│   │   │   │   │   └── y7Wt.py
+│   │   │   │   ├── 4cd56dc9
+│   │   │   │   │   ├── entries.json
+│   │   │   │   │   └── pjY4
+│   │   │   │   ├── 6f8a0ec6
+│   │   │   │   │   ├── NTzA
+│   │   │   │   │   └── entries.json
+│   │   │   │   ├── 76cabed9
+│   │   │   │   │   ├── 0RIJ.py
+│   │   │   │   │   ├── 0mXn.py
+│   │   │   │   │   ├── 10KE.py
+│   │   │   │   │   ├── 4aUm.py
+│   │   │   │   │   ├── 5VUe.py
+│   │   │   │   │   ├── A3El.py
+│   │   │   │   │   ├── Bctb.py
+│   │   │   │   │   ├── HNJq.py
+│   │   │   │   │   ├── I62X.py
+│   │   │   │   │   ├── QCbr.py
+│   │   │   │   │   ├── entries.json
+│   │   │   │   │   ├── jpjT.py
+│   │   │   │   │   ├── k7bU.py
+│   │   │   │   │   ├── vfRc.py
+│   │   │   │   │   ├── x9mU.py
+│   │   │   │   │   ├── yTc4.py
+│   │   │   │   │   └── yh2k.py
+│   │   │   │   └── 775c7fd9
+│   │   │   │       ├── CHqJ.py
+│   │   │   │       ├── entries.json
+│   │   │   │       └── oZEo.py
+│   │   │   ├── globalStorage
+│   │   │   │   ├── google.geminicodeassist
+│   │   │   │   │   └── chat_checkpoint_files
+│   │   │   │   │       ├── 196149d5b2a3401b
+│   │   │   │   │       │   └── 3f73595be630e44b9da92f225d451affeb67389945956228c629238d96d86baa
+│   │   │   │   │       ├── 19e88a8da379bf6a
+│   │   │   │   │       │   ├── 56e05656bc4f9d1f1148c1276f08dae6d69e63d91fd62edfc5f8917ebda999e0
+│   │   │   │   │       │   └── a37628f0a0ca80ce92ed01a856ad09ea88467b79554d624b33fe20146e4cdc71
+│   │   │   │   │       ├── 1adb73e153c931eb
+│   │   │   │   │       │   └── a37628f0a0ca80ce92ed01a856ad09ea88467b79554d624b33fe20146e4cdc71
+│   │   │   │   │       ├── 29805fd77b1067ef
+│   │   │   │   │       │   └── a37628f0a0ca80ce92ed01a856ad09ea88467b79554d624b33fe20146e4cdc71
+│   │   │   │   │       ├── 319f68661a651491
+│   │   │   │   │       │   ├── 3f73595be630e44b9da92f225d451affeb67389945956228c629238d96d86baa
+│   │   │   │   │       │   └── a37628f0a0ca80ce92ed01a856ad09ea88467b79554d624b33fe20146e4cdc71
+│   │   │   │   │       ├── 4464d5cb574f88a3
+│   │   │   │   │       │   └── 3f73595be630e44b9da92f225d451affeb67389945956228c629238d96d86baa
+│   │   │   │   │       ├── 510af21fe754352c
+│   │   │   │   │       │   └── a37628f0a0ca80ce92ed01a856ad09ea88467b79554d624b33fe20146e4cdc71
+│   │   │   │   │       ├── 71ae47aa6fd8552a
+│   │   │   │   │       │   └── a37628f0a0ca80ce92ed01a856ad09ea88467b79554d624b33fe20146e4cdc71
+│   │   │   │   │       ├── 78cb1f7a36fc6be4
+│   │   │   │   │       │   └── a37628f0a0ca80ce92ed01a856ad09ea88467b79554d624b33fe20146e4cdc71
+│   │   │   │   │       ├── 92ec1e99b82775c3
+│   │   │   │   │       │   └── fff14e320fe8e7445a6cbd2064ca34cf9ea7f411939808a31bc106874dbd1c87
+│   │   │   │   │       ├── 9d1ede3128e9e523
+│   │   │   │   │       │   └── a37628f0a0ca80ce92ed01a856ad09ea88467b79554d624b33fe20146e4cdc71
+│   │   │   │   │       ├── b21056734ede233f
+│   │   │   │   │       │   └── 11ab9fd7fe9ae2e6fa983d3732fcf339b9f4b9d3d3200d1aa958b706140dc6bd
+│   │   │   │   │       ├── b5d5cd0bf638eb5
+│   │   │   │   │       │   └── 3f73595be630e44b9da92f225d451affeb67389945956228c629238d96d86baa
+│   │   │   │   │       ├── ba551e4062ae845d
+│   │   │   │   │       │   └── 56e05656bc4f9d1f1148c1276f08dae6d69e63d91fd62edfc5f8917ebda999e0
+│   │   │   │   │       ├── cedba3c1675542cc
+│   │   │   │   │       │   └── a37628f0a0ca80ce92ed01a856ad09ea88467b79554d624b33fe20146e4cdc71
+│   │   │   │   │       ├── d7debee28e808f22
+│   │   │   │   │       │   └── 4da33633e4ad1724826da28d7f57aed126198dbe04a5dcf302f224cceb076308
+│   │   │   │   │       ├── ddac968a491ee583
+│   │   │   │   │       │   └── 56e05656bc4f9d1f1148c1276f08dae6d69e63d91fd62edfc5f8917ebda999e0
+│   │   │   │   │       ├── e5946c00e1d53baf
+│   │   │   │   │       │   └── a37628f0a0ca80ce92ed01a856ad09ea88467b79554d624b33fe20146e4cdc71
+│   │   │   │   │       └── e875669f0593ab7b
+│   │   │   │   │           └── a37628f0a0ca80ce92ed01a856ad09ea88467b79554d624b33fe20146e4cdc71
+│   │   │   │   └── vscode.json-language-features
+│   │   │   │       └── json-schema-cache
+│   │   │   └── workspaceStorage
+│   │   │       ├── 523b0c75
+│   │   │       │   └── vscode.lock
+│   │   │       ├── 523b0c75-1
+│   │   │       │   └── vscode.lock
+│   │   │       └── 523b0c75-2
+│   │   ├── logs
+│   │   │   └── 20250724T083132
+│   │   │       ├── exthost1
+│   │   │       │   ├── output_logging_20250724T083138
+│   │   │       │   │   ├── 1-EditorConfig.log
+│   │   │       │   │   ├── 2-Google Cloud CLI Installation.log
+│   │   │       │   │   ├── 3-Apigee.log
+│   │   │       │   │   ├── 4-Cloud Code Yaml Support.log
+│   │   │       │   │   └── 5-Gemini Code Assist.log
+│   │   │       │   ├── remoteExtHostTelemetry.log
+│   │   │       │   ├── remoteexthost.log
+│   │   │       │   ├── vscode.git
+│   │   │       │   │   └── Git.log
+│   │   │       │   ├── vscode.github
+│   │   │       │   │   └── GitHub.log
+│   │   │       │   └── vscode.json-language-features
+│   │   │       │       └── JSON Language Server.log
+│   │   │       ├── exthost10
+│   │   │       │   ├── output_logging_20250724T095910
+│   │   │       │   │   ├── 1-EditorConfig.log
+│   │   │       │   │   ├── 2-Google Cloud CLI Installation.log
+│   │   │       │   │   ├── 3-Apigee.log
+│   │   │       │   │   └── 4-Cloud Code Yaml Support.log
+│   │   │       │   ├── remoteExtHostTelemetry.log
+│   │   │       │   ├── remoteexthost.log
+│   │   │       │   ├── vscode.git
+│   │   │       │   │   └── Git.log
+│   │   │       │   ├── vscode.github
+│   │   │       │   │   └── GitHub.log
+│   │   │       │   └── vscode.json-language-features
+│   │   │       │       └── JSON Language Server.log
+│   │   │       ├── exthost11
+│   │   │       │   ├── ms-python.python
+│   │   │       │   │   ├── Python Language Server.log
+│   │   │       │   │   ├── Python Locator.log
+│   │   │       │   │   └── Python.log
+│   │   │       │   ├── output_logging_20250724T100955
+│   │   │       │   │   ├── 1-Python Test Log.log
+│   │   │       │   │   ├── 2-EditorConfig.log
+│   │   │       │   │   ├── 3-Google Cloud CLI Installation.log
+│   │   │       │   │   ├── 4-Apigee.log
+│   │   │       │   │   ├── 5-Cloud Code Yaml Support.log
+│   │   │       │   │   ├── 6-Gemini Code Assist.1.log
+│   │   │       │   │   └── 6-Gemini Code Assist.log
+│   │   │       │   ├── remoteExtHostTelemetry.log
+│   │   │       │   ├── remoteexthost.log
+│   │   │       │   ├── vscode.git
+│   │   │       │   │   └── Git.log
+│   │   │       │   ├── vscode.github
+│   │   │       │   │   └── GitHub.log
+│   │   │       │   └── vscode.json-language-features
+│   │   │       │       └── JSON Language Server.log
+│   │   │       ├── exthost12
+│   │   │       │   ├── ms-python.python
+│   │   │       │   │   ├── Python Language Server.log
+│   │   │       │   │   ├── Python Locator.log
+│   │   │       │   │   └── Python.log
+│   │   │       │   ├── output_logging_20250724T102514
+│   │   │       │   │   ├── 1-Python Test Log.log
+│   │   │       │   │   ├── 2-EditorConfig.log
+│   │   │       │   │   ├── 3-Google Cloud CLI Installation.log
+│   │   │       │   │   ├── 4-Apigee.log
+│   │   │       │   │   ├── 5-Cloud Code Yaml Support.log
+│   │   │       │   │   ├── 6-Gemini Code Assist.1.log
+│   │   │       │   │   └── 6-Gemini Code Assist.log
+│   │   │       │   ├── remoteExtHostTelemetry.log
+│   │   │       │   ├── remoteexthost.log
+│   │   │       │   ├── vscode.git
+│   │   │       │   │   └── Git.log
+│   │   │       │   ├── vscode.github
+│   │   │       │   │   └── GitHub.log
+│   │   │       │   └── vscode.json-language-features
+│   │   │       │       └── JSON Language Server.log
+│   │   │       ├── exthost2
+│   │   │       │   ├── output_logging_20250724T083625
+│   │   │       │   │   ├── 1-EditorConfig.log
+│   │   │       │   │   ├── 2-Google Cloud CLI Installation.log
+│   │   │       │   │   ├── 3-Apigee.log
+│   │   │       │   │   ├── 4-Cloud Code Yaml Support.log
+│   │   │       │   │   └── 5-Gemini Code Assist.log
+│   │   │       │   ├── remoteExtHostTelemetry.log
+│   │   │       │   ├── remoteexthost.log
+│   │   │       │   ├── vscode.git
+│   │   │       │   │   └── Git.log
+│   │   │       │   ├── vscode.github
+│   │   │       │   │   └── GitHub.log
+│   │   │       │   └── vscode.json-language-features
+│   │   │       │       └── JSON Language Server.log
+│   │   │       ├── exthost3
+│   │   │       │   ├── ms-python.python
+│   │   │       │   │   ├── Python Language Server.log
+│   │   │       │   │   ├── Python Locator.log
+│   │   │       │   │   └── Python.log
+│   │   │       │   ├── output_logging_20250724T083909
+│   │   │       │   │   ├── 1-EditorConfig.log
+│   │   │       │   │   ├── 2-Google Cloud CLI Installation.log
+│   │   │       │   │   ├── 3-Apigee.log
+│   │   │       │   │   ├── 4-Cloud Code Yaml Support.log
+│   │   │       │   │   ├── 5-Gemini Code Assist.log
+│   │   │       │   │   └── 6-Python Test Log.log
+│   │   │       │   ├── remoteExtHostTelemetry.log
+│   │   │       │   ├── remoteexthost.log
+│   │   │       │   ├── vscode.git
+│   │   │       │   │   └── Git.log
+│   │   │       │   ├── vscode.github
+│   │   │       │   │   └── GitHub.log
+│   │   │       │   └── vscode.json-language-features
+│   │   │       │       └── JSON Language Server.log
+│   │   │       ├── exthost4
+│   │   │       │   ├── output_logging_20250724T091249
+│   │   │       │   │   ├── 1-EditorConfig.log
+│   │   │       │   │   ├── 2-Google Cloud CLI Installation.log
+│   │   │       │   │   ├── 3-Apigee.log
+│   │   │       │   │   ├── 4-Cloud Code Yaml Support.log
+│   │   │       │   │   └── 5-Gemini Code Assist.log
+│   │   │       │   ├── remoteExtHostTelemetry.log
+│   │   │       │   ├── remoteexthost.log
+│   │   │       │   ├── vscode.git
+│   │   │       │   │   └── Git.log
+│   │   │       │   ├── vscode.github
+│   │   │       │   │   └── GitHub.log
+│   │   │       │   └── vscode.json-language-features
+│   │   │       │       └── JSON Language Server.log
+│   │   │       ├── exthost5
+│   │   │       │   ├── ms-python.python
+│   │   │       │   │   ├── Python Language Server.log
+│   │   │       │   │   ├── Python Locator.log
+│   │   │       │   │   └── Python.log
+│   │   │       │   ├── output_logging_20250724T091325
+│   │   │       │   │   ├── 1-EditorConfig.log
+│   │   │       │   │   ├── 2-Python Test Log.log
+│   │   │       │   │   ├── 3-Google Cloud CLI Installation.log
+│   │   │       │   │   ├── 4-Apigee.log
+│   │   │       │   │   └── 5-Cloud Code Yaml Support.log
+│   │   │       │   ├── remoteExtHostTelemetry.log
+│   │   │       │   ├── remoteexthost.log
+│   │   │       │   ├── vscode.git
+│   │   │       │   │   └── Git.log
+│   │   │       │   ├── vscode.github
+│   │   │       │   │   └── GitHub.log
+│   │   │       │   └── vscode.json-language-features
+│   │   │       │       └── JSON Language Server.log
+│   │   │       ├── exthost6
+│   │   │       │   ├── ms-python.python
+│   │   │       │   │   ├── Python Language Server.log
+│   │   │       │   │   ├── Python Locator.log
+│   │   │       │   │   └── Python.log
+│   │   │       │   ├── output_logging_20250724T091505
+│   │   │       │   │   ├── 1-EditorConfig.log
+│   │   │       │   │   ├── 2-Google Cloud CLI Installation.log
+│   │   │       │   │   ├── 3-Apigee.log
+│   │   │       │   │   ├── 4-Cloud Code Yaml Support.log
+│   │   │       │   │   ├── 5-Gemini Code Assist.log
+│   │   │       │   │   └── 6-Python Test Log.log
+│   │   │       │   ├── remoteExtHostTelemetry.log
+│   │   │       │   ├── remoteexthost.log
+│   │   │       │   ├── vscode.git
+│   │   │       │   │   └── Git.log
+│   │   │       │   ├── vscode.github
+│   │   │       │   │   └── GitHub.log
+│   │   │       │   └── vscode.json-language-features
+│   │   │       │       └── JSON Language Server.log
+│   │   │       ├── exthost7
+│   │   │       │   ├── ms-python.python
+│   │   │       │   │   ├── Python Language Server.log
+│   │   │       │   │   ├── Python Locator.log
+│   │   │       │   │   └── Python.log
+│   │   │       │   ├── output_logging_20250724T092902
+│   │   │       │   │   ├── 1-EditorConfig.log
+│   │   │       │   │   ├── 2-Google Cloud CLI Installation.log
+│   │   │       │   │   ├── 3-Apigee.log
+│   │   │       │   │   ├── 4-Cloud Code Yaml Support.log
+│   │   │       │   │   ├── 5-Gemini Code Assist.log
+│   │   │       │   │   └── 6-Python Test Log.log
+│   │   │       │   ├── remoteExtHostTelemetry.log
+│   │   │       │   ├── remoteexthost.log
+│   │   │       │   ├── vscode.git
+│   │   │       │   │   └── Git.log
+│   │   │       │   ├── vscode.github
+│   │   │       │   │   └── GitHub.log
+│   │   │       │   └── vscode.json-language-features
+│   │   │       │       └── JSON Language Server.log
+│   │   │       ├── exthost8
+│   │   │       │   ├── ms-python.python
+│   │   │       │   │   ├── Python Language Server.log
+│   │   │       │   │   ├── Python Locator.log
+│   │   │       │   │   └── Python.log
+│   │   │       │   ├── output_logging_20250724T093958
+│   │   │       │   │   ├── 1-Python Test Log.log
+│   │   │       │   │   ├── 2-EditorConfig.log
+│   │   │       │   │   ├── 3-Google Cloud CLI Installation.log
+│   │   │       │   │   ├── 4-Apigee.log
+│   │   │       │   │   ├── 5-Cloud Code Yaml Support.log
+│   │   │       │   │   └── 6-Gemini Code Assist.log
+│   │   │       │   ├── remoteExtHostTelemetry.log
+│   │   │       │   ├── remoteexthost.log
+│   │   │       │   ├── vscode.git
+│   │   │       │   │   └── Git.log
+│   │   │       │   ├── vscode.github
+│   │   │       │   │   └── GitHub.log
+│   │   │       │   └── vscode.json-language-features
+│   │   │       │       └── JSON Language Server.log
+│   │   │       ├── exthost9
+│   │   │       │   ├── ms-python.python
+│   │   │       │   │   ├── Python Language Server.log
+│   │   │       │   │   ├── Python Locator.log
+│   │   │       │   │   └── Python.log
+│   │   │       │   ├── output_logging_20250724T094851
+│   │   │       │   │   ├── 1-Python Test Log.log
+│   │   │       │   │   ├── 2-EditorConfig.log
+│   │   │       │   │   ├── 3-Google Cloud CLI Installation.log
+│   │   │       │   │   ├── 4-Apigee.log
+│   │   │       │   │   ├── 5-Cloud Code Yaml Support.log
+│   │   │       │   │   └── 6-Gemini Code Assist.log
+│   │   │       │   ├── remoteExtHostTelemetry.log
+│   │   │       │   ├── remoteexthost.log
+│   │   │       │   ├── vscode.git
+│   │   │       │   │   └── Git.log
+│   │   │       │   ├── vscode.github
+│   │   │       │   │   └── GitHub.log
+│   │   │       │   └── vscode.json-language-features
+│   │   │       │       └── JSON Language Server.log
+│   │   │       ├── ptyhost.log
+│   │   │       └── remoteagent.log
+│   │   └── token
+│   └── extensions
+│       └── extensions.json
+├── .config
+│   └── powershell
+│       └── Microsoft.PowerShell_profile.ps1
+├── .docker
+│   └── config.json
+├── .gemini
+│   └── .env
+├── .npm
+│   ├── _logs
+│   │   ├── 2025-07-24T08_31_10_516Z-debug-0.log
+│   │   ├── 2025-07-24T08_31_34_706Z-debug-0.log
+│   │   ├── 2025-07-24T08_36_21_806Z-debug-0.log
+│   │   ├── 2025-07-24T08_41_29_136Z-debug-0.log
+│   │   ├── 2025-07-24T09_13_35_782Z-debug-0.log
+│   │   ├── 2025-07-24T09_15_29_992Z-debug-0.log
+│   │   ├── 2025-07-24T09_17_44_345Z-debug-0.log
+│   │   ├── 2025-07-24T09_29_09_880Z-debug-0.log
+│   │   ├── 2025-07-24T09_29_26_971Z-debug-0.log
+│   │   ├── 2025-07-24T09_40_03_617Z-debug-0.log
+│   │   ├── 2025-07-24T09_40_03_757Z-debug-0.log
+│   │   ├── 2025-07-24T09_48_57_706Z-debug-0.log
+│   │   ├── 2025-07-24T09_49_02_462Z-debug-0.log
+│   │   ├── 2025-07-24T09_59_17_096Z-debug-0.log
+│   │   ├── 2025-07-24T10_10_00_600Z-debug-0.log
+│   │   ├── 2025-07-24T10_10_00_893Z-debug-0.log
+│   │   ├── 2025-07-24T10_25_20_013Z-debug-0.log
+│   │   ├── 2025-07-24T10_25_20_244Z-debug-0.log
+│   │   └── 2025-07-24T10_37_48_374Z-debug-0.log
+│   └── _update-notifier-last-checked
+├── .profile
+├── .sudo_as_admin_successful
+├── .vscode
+│   └── settings.json
+├── README-cloudshell.txt
+├── adk_project
+│   ├── .DS_Store
+│   ├── .env
+│   ├── __pycache__
+│   │   ├── agent.cpython-312.pyc
+│   │   └── callback_logging.cpython-312.pyc
+│   ├── agent.py
+│   ├── app_agent
+│   │   ├── .DS_Store
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   └── agent.cpython-312.pyc
+│   │   └── agent.py
+│   ├── callback_logging.py
+│   ├── evalsetf49f6b.evalset.json
+│   ├── llm_auditor
+│   │   ├── .env
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   └── agent.cpython-312.pyc
+│   │   ├── agent.py
+│   │   └── sub_agents
+│   │       ├── __init__.py
+│   │       ├── __pycache__
+│   │       │   └── __init__.cpython-312.pyc
+│   │       ├── critic
+│   │       │   ├── __init__.py
+│   │       │   ├── __pycache__
+│   │       │   │   ├── __init__.cpython-312.pyc
+│   │       │   │   ├── agent.cpython-312.pyc
+│   │       │   │   └── prompt.cpython-312.pyc
+│   │       │   ├── agent.py
+│   │       │   └── prompt.py
+│   │       └── reviser
+│   │           ├── __init__.py
+│   │           ├── __pycache__
+│   │           │   ├── __init__.cpython-312.pyc
+│   │           │   ├── agent.cpython-312.pyc
+│   │           │   └── prompt.cpython-312.pyc
+│   │           ├── agent.py
+│   │           └── prompt.py
+│   ├── my_google_search_agent
+│   │   ├── .env
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   └── agent.cpython-312.pyc
+│   │   └── agent.py
+│   └── requirements.txt
+└── adk_project.zip

@@ -1,0 +1,273 @@
+Documento de Transferencia y Plan de Ejecución para: Proyecto Central_black (Fase 1)
+
+
+Misión: Construir y dejar funcional el backend orquestador para la aplicación Central_black, conectándolo con el frontend existente y los modelos/agentes locales y remotos especificados.
+Tiempo Límite: 2 horas.
+Estado Actual del Proyecto:
+* El usuario ha creado un nuevo entorno de desarrollo.
+* Se dispone del código fuente del frontend (codeforge), los agentes del curso (adk_project)API de Gemini 2.5 pro, y los modelos locales (llama 3 8B en formato CoreML).
+* Se ha creado una estructura de carpetas base para el proyecto Central_black.
+Fase I: Configuración del Entorno en Colab
+Objetivo: Preparar el entorno de Colab, instalar todas las dependencias y dejar los servicios listos para la configuración.
+Instrucción 1.1: Descompresión e Instalación de Dependencias
+Ejecuta la siguiente celda de código para descomprimir el proyecto, instalar las dependencias del backend (Python) y del frontend (Node.js).
+# --- Descomprimir el proyecto ---
+!unzip -q /content/Central_black.zip -d /content/ 
+
+# --- Instalar dependencias del Backend ---
+!pip install -q "fastapi[all]" python-dotenv google-generativeai requests
+
+# --- Instalar dependencias del Frontend ---
+%cd /content/Central_black/1_frontend_codeforge
+!npm install
+%cd /content/
+
+Instrucción 1.2: Instalar y Configurar ngrok
+Para que el frontend (que correrá en el navegador) pueda comunicarse con el backend (corriendo en Colab), necesitamos exponer el backend a internet. Usaremos ngrok.
+# Instalar pyngrok
+!pip install -q pyngrok
+
+# Autenticar ngrok (El usuario deberá pegar su Authtoken aquí)
+# El usuario puede obtener su token desde https://dashboard.ngrok.com/get-started/your-authtoken
+import os
+from pyngrok import ngrok
+
+# Pide al usuario su token de ngrok
+NGROK_AUTH_TOKEN = input("Por favor, pega tu Authtoken de ngrok aquí: ")
+ngrok.set_auth_token(NGROK_AUTH_TOKEN)
+os.environ["NGROK_AUTH_TOKEN"] = NGROK_AUTH_TOKEN
+
+Fase II: Implementación del Código del Orquestador
+Objetivo: Rellenar todos los archivos vacíos del backend con su lógica funcional.
+Instrucción 2.1: Crear Archivo de Configuración (.env)
+Crea el archivo .env en el backend. Este contendrá las claves de API y las rutas.
+%%writefile /content/Central_black/2_backend_orchestrator/.env
+# Archivo de configuración de entorno
+
+# --- Claves de API ---
+GEMINI_API_KEY="TU_API_KEY_DE_GEMINI_AQUÍ"
+
+# --- Endpoints Locales ---
+OLLAMA_HOST="http://localhost:11434" # Host por defecto de Ollama
+
+# --- Rutas a Proyectos y Modelos (IMPORTANTE: rutas dentro de Colab) ---
+ADK_PROJECT_PATH="/content/Central_black/4_agents_source_adk"
+COREML_MODEL_PATH="/content/Central_black/3_models_local/llama3.mlpackage"
+
+Nota para el usuario: Debe reemplazar "TU_API_KEY_DE_GEMINI_AQUÍ" con su clave real.
+Instrucción 2.2: Escribir el Código de los Módulos
+Ejecuta las siguientes celdas en orden. Cada una escribirá el código completo para un archivo específico del backend.
+Celda 1: config.py
+%%writefile /content/Central_black/2_backend_orchestrator/app/core/config.py
+import os
+from dotenv import load_dotenv
+from pathlib import Path
+
+# Construir la ruta al archivo .env
+env_path = Path('.') / '.env'
+load_dotenv(dotenv_path=env_path)
+
+class Settings:
+   GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
+   OLLAMA_HOST: str = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+   ADK_PROJECT_PATH: str = os.getenv("ADK_PROJECT_PATH", "")
+   COREML_MODEL_PATH: str = os.getenv("COREML_MODEL_PATH", "")
+
+settings = Settings()
+
+Celda 2: orchestrate.py (Schemas)
+%%writefile /content/Central_black/2_backend_orchestrator/app/schemas/orchestrate.py
+from pydantic import BaseModel
+from typing import List, Optional
+
+class Message(BaseModel):
+   role: str
+   content: str
+   source: Optional[str] = None
+
+class OrchestrateRequest(BaseModel):
+   prompt: str
+   history: List[Message]
+
+class OrchestrateResponse(BaseModel):
+   reply: str
+   source: str
+
+Celda 3: gemini_service.py
+%%writefile /content/Central_black/2_backend_orchestrator/app/services/gemini_service.py
+import google.generativeai as genai
+from app.core.config import settings
+
+genai.configure(api_key=settings.GEMINI_API_KEY)
+model = genai.GenerativeModel('gemini-1.5-flash')
+
+async def generate_gemini_response(prompt: str, history: list) -> str:
+   # Lógica para interactuar con Gemini
+   # (Aquí se puede expandir para manejar el historial de conversación)
+   response = await model.generate_content_async(prompt)
+   return response.text
+
+Celda 4: ollama_service.py
+%%writefile /content/Central_black/2_backend_orchestrator/app/services/ollama_service.py
+import requests
+import json
+from app.core.config import settings
+
+async def query_ollama(model: str, prompt: str) -> str:
+   url = f"{settings.OLLAMA_HOST}/api/generate"
+   payload = {
+       "model": model,
+       "prompt": prompt,
+       "stream": False
+   }
+   try:
+       response = requests.post(url, json=payload)
+       response.raise_for_status()
+       # La respuesta de Ollama viene como un stream de JSONs, se procesa para obtener el contenido final
+       full_response = ""
+       for line in response.iter_lines():
+           if line:
+               data = json.loads(line)
+               full_response += data.get("response", "")
+       return full_response
+   except requests.exceptions.RequestException as e:
+       return f"Error al conectar con Ollama: {e}"
+
+Celda 5: coreml_service.py
+%%writefile /content/Central_black/2_backend_orchestrator/app/services/coreml_service.py
+# Este archivo requiere dependencias específicas de Apple.
+# Su implementación en un entorno Colab (Linux) es compleja y no es directa.
+# Por ahora, se deja como un placeholder simulado.
+
+async def query_coreml_llama3(prompt: str) -> str:
+   # En un entorno macOS, aquí iría la lógica para cargar el modelo .mlpackage
+   # y ejecutar la inferencia.
+   # from coremltools.models import MLModel
+   # model = MLModel(settings.COREML_MODEL_PATH)
+   # ...lógica de tokenización y predicción...
+   print("ADVERTENCIA: La ejecución de CoreML no es soportada en este entorno. Devolviendo respuesta simulada.")
+   return f"Respuesta simulada de Llama3-CoreML para el prompt: '{prompt}'"
+
+Celda 6: app_agent_orchestrator.py (El Cerebro)
+%%writefile /content/Central_black/2_backend_orchestrator/agents/app_agent_orchestrator.py
+from app.services import gemini_service, ollama_service, coreml_service
+# En el futuro, aquí se importarán los 'tools' de los otros agentes
+
+async def route_prompt(prompt: str) -> (str, str):
+   """
+   Analiza el prompt y decide qué herramienta usar.
+   Esta es la lógica de enrutamiento principal.
+   """
+   prompt_lower = prompt.lower()
+
+   # --- Lógica de decisión (Tool Routing) ---
+   if "revisa" in prompt_lower or "audita" in prompt_lower:
+       # TODO: Llamar a llm_auditor_tool
+       return f"Respuesta de LLM Auditor (simulado) para: '{prompt}'", "LLM Auditor"
+
+   elif "busca en google" in prompt_lower or "qué es" in prompt_lower:
+       # TODO: Llamar a search_agent_tool
+       return f"Respuesta de Google Search (simulado) para: '{prompt}'", "Google Search Agent"
+
+   elif "código" in prompt_lower or "programa" in prompt_lower or "script" in prompt_lower:
+       response = await ollama_service.query_ollama("codellama", prompt)
+       return response, "CodeLlama (Ollama)"
+
+   elif "llama3" in prompt_lower:
+       response = await coreml_service.query_coreml_llama3(prompt)
+       return response, "Llama3 (CoreML)"
+       
+   elif "qwen" in prompt_lower:
+       response = await ollama_service.query_ollama("qwen", prompt)
+       return response, "Qwen (Ollama)"
+
+   else:
+       # Por defecto, usar Gemini para conversaciones generales
+       response = await gemini_service.generate_gemini_response(prompt, [])
+       return response, "Gemini Flash"
+
+Celda 7: orchestrate.py (Endpoint)
+%%writefile /content/Central_black/2_backend_orchestrator/app/api/v1/endpoints/orchestrate.py
+from fastapi import APIRouter, HTTPException
+from app.schemas.orchestrate import OrchestrateRequest, OrchestrateResponse
+from agents.app_agent_orchestrator import route_prompt
+
+router = APIRouter()
+
+@router.post("", response_model=OrchestrateResponse)
+async def handle_orchestration(request: OrchestrateRequest):
+   try:
+       reply, source = await route_prompt(request.prompt)
+       return OrchestrateResponse(reply=reply, source=source)
+   except Exception as e:
+       raise HTTPException(status_code=500, detail=str(e))
+
+Celda 8: main.py (Aplicación Principal)
+%%writefile /content/Central_black/2_backend_orchestrator/app/main.py
+from fastapi import FastAPI
+from app.api.v1.endpoints import orchestrate
+import sys
+import os
+
+# Añadir la ruta del proyecto al sys.path para permitir importaciones
+# como 'from agents import ...'
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+app = FastAPI(title="Centralblack Orchestrator API")
+
+app.include_router(orchestrate.router, prefix="/api/v1/orchestrate", tags=["Orchestrator"])
+
+@app.get("/")
+def read_root():
+   return {"status": "Centralblack Orchestrator está activo."}
+
+Fase III: Ejecución y Verificación
+Objetivo: Levantar el servidor backend, exponerlo con ngrok y verificar que el frontend puede comunicarse con él.
+Instrucción 3.1: Ejecutar el Backend y Exponerlo
+Esta celda iniciará el servidor FastAPI en un proceso de fondo y creará un túnel público con ngrok.
+import asyncio
+import uvicorn
+from pyngrok import ngrok
+
+# Configurar y correr Uvicorn en un hilo separado
+config = uvicorn.Config("app.main:app", host="127.0.0.1", port=8000, log_level="info")
+server = uvicorn.Server(config)
+
+# Abrir el túnel de ngrok
+public_url = ngrok.connect(8000)
+print(f"✅ Backend corriendo y expuesto en: {public_url}")
+print("Este es el endpoint que el frontend debe usar.")
+
+# Correr el servidor de forma asíncrona
+# Para detenerlo, reinicia el runtime de Colab.
+await server.serve()
+
+Instrucción 3.2: Configurar el Frontend (Paso Manual para el Usuario)
+1. El modelo de Colab debe tomar la URL pública generada por ngrok en la celda anterior.
+2. Debe instruir al usuario para que abra el archivo Central_black/1_frontend_codeforge/vite.config.ts.
+3. El usuario debe modificar el bloque server.proxy para que apunte a la URL de ngrok.
+Ejemplo de cómo debe quedar vite.config.ts:
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+ plugins: [react()],
+ server: {
+   proxy: {
+     '/api': {
+       target: 'https://<ID_UNICO_DE_NGROK>.ngrok-free.app', // <-- PEGAR LA URL DE NGROK AQUÍ
+       changeOrigin: true,
+       rewrite: (path) => path.replace(/^\/api/, '/api/v1'), // Asegura que la ruta sea correcta
+     },
+   },
+ },
+})
+
+Instrucción 3.3: Iniciar el Frontend (Paso Manual para el Usuario)
+   1. El usuario debe abrir una terminal en su máquina local (no en Colab).
+   2. Navegar a la carpeta del frontend: cd ruta/a/Central_black/1_frontend_codeforge.
+   3. Ejecutar npm run dev.
+   4. Abrir la URL de localhost que provee Vite en su navegador.
+Verificación Final:
+Al enviar un mensaje desde la interfaz web, la petición viajará a través de ngrok hasta el backend en Colab. El app_agent_orchestrator enrutará la petición al servicio correspondiente, y la respuesta deberá aparecer en el chat, etiquetada con la fuente correcta (ej: "CodeLlama (Ollama)").
+Fin del plan de ejecución para la Fase 1.
